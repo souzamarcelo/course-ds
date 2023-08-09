@@ -9,6 +9,7 @@ Este é o repositório da disciplina de *Algoritmos e Estruturas de Dados* do cu
 ### 1. Materiais
 
 + [Introdução](./1-materiais/1-introducao.pdf)
++ [Complexidade de algoritmos](./1-materiais/2-complexidade-algoritmos.pdf)
 
 ### 2. Exercícios
 
