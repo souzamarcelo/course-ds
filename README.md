@@ -17,9 +17,9 @@ Este é o repositório da disciplina de *Algoritmos e Estruturas de Dados* do cu
 
 ### 3. Código-fonte
 
-+ Estruturas de dados
-+ Exemplos:
-    + [NRooks](./3-src/nrooks.zip)
++ [Estruturas de dados](./3-src/data-structures)
++ Práticas:
+    + [NRooks](./3-src/nrooks)
 
 ***
 
