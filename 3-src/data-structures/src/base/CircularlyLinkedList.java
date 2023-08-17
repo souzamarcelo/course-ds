@@ -50,7 +50,7 @@ public class CircularlyLinkedList<E> {
 
 	public void addLast(E e) {
 		addFirst(e);
-		tail = tail.getNext();
+		rotate();
 	}
 
 	public E removeFirst() {
