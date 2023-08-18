@@ -23,6 +23,10 @@ Este é o repositório da disciplina de *Algoritmos e Estruturas de Dados* do cu
 + Práticas:
     + [NRooks](./3-src/nrooks)
 
+### 4. Laboratórios
+
++ [Pilhas](./4-labs/lab1-pilhas.pdf)
+
 ***
 
 ## Citação
