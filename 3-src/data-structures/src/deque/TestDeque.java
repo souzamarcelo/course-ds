@@ -2,7 +2,7 @@ package deque;
 
 import utils.Point;
 
-public class TestArrayDeque {
+public class TestDeque {
 
 	//static ArrayDeque<Point> deque = new ArrayDeque<>(5); 
 	static LinkedDeque<Point> deque = new LinkedDeque<>();

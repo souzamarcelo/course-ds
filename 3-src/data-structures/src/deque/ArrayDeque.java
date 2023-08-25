@@ -30,7 +30,7 @@ public class ArrayDeque<E> implements Deque<E> {
 
 	public void addFirst(E e) {
 		if (size == data.length) 
-			throw new IllegalStateException("Queue is full");
+			throw new IllegalStateException("Deque is full");
 		
 		int avail = f - 1;
 		if(avail < 0)
@@ -43,7 +43,7 @@ public class ArrayDeque<E> implements Deque<E> {
 
 	public void addLast(E e) {
 		if (size == data.length) 
-			throw new IllegalStateException("Queue is full");
+			throw new IllegalStateException("Deque is full");
 		
 		int avail = f + size;
 		if(avail >= data.length)
