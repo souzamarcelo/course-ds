@@ -2,7 +2,7 @@ package list;
 
 import utils.Point;
 
-public class TestLinkedList {
+public class TestList {
 	//static List<Point> list = new LinkedList<>(); 
 	static List<Point> list = new ArrayList<>(); 
 	
