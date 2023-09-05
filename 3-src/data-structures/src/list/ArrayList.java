@@ -7,6 +7,7 @@ public class ArrayList<E> implements List<E> {
 	
 	public ArrayList() { this(CAPACITY); }
 	
+	@SuppressWarnings("unchecked")
 	public ArrayList(int capacity) {
 		data = (E[]) new Object[capacity];
 	}
@@ -30,7 +31,7 @@ public class ArrayList<E> implements List<E> {
 		checkIndex(i, size + 1);
 		if (size == data.length)
 			resize(2 * data.length);
-		for (int k=size-1; k >= i; k--)
+		for (int k = size-1; k >= i; k--)
 			data[k+1] = data[k];
 		data[i] = e;
 		size++;
@@ -43,7 +44,7 @@ public class ArrayList<E> implements List<E> {
 	public E remove(int i) {
 		checkIndex(i, size);
 		E temp = data[i];
-		for (int k=i; k < size-1; k++)
+		for (int k = i; k < size-1; k++)
 			data[k] = data[k+1];
 		data[size-1] = null;
 		size--;
@@ -55,9 +56,10 @@ public class ArrayList<E> implements List<E> {
 			throw new IndexOutOfBoundsException("Illegal index: " + i);
 	}
 	
+	@SuppressWarnings("unchecked")
 	protected void resize(int capacity) {
 		E[] temp = (E[]) new Object[capacity];
-		for (int k=0; k < size; k++)
+		for (int k = 0; k < size; k++)
 			temp[k] = data[k];
 		data = temp;
 	}

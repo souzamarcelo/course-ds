@@ -8,6 +8,7 @@ public class ArrayDeque<E> implements Deque<E> {
 	
 	public ArrayDeque() {this(CAPACITY);}
 	
+	@SuppressWarnings("unchecked")
 	public ArrayDeque(int capacity) {
 		data = (E[]) new Object[capacity];
 	}

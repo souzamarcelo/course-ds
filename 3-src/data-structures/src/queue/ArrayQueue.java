@@ -8,6 +8,7 @@ public class ArrayQueue<E> implements Queue<E> {
 	
 	public ArrayQueue() {this(CAPACITY);}
 	
+	@SuppressWarnings("unchecked")
 	public ArrayQueue(int capacity) {
 		data = (E[]) new Object[capacity];
 	}
