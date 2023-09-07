@@ -13,6 +13,7 @@ Este é o repositório da disciplina de *Algoritmos e Estruturas de Dados* do cu
 + [Estruturas de dados fundamentais](./1-materiais/3-estruturas-dados-fundamentais.pdf)
 + [Pilhas, filas e deques](./1-materiais/4-pilhas-filas-deques.pdf)
 + [Listas dinâmicas](./1-materiais/5-listas-dinamicas.pdf)
++ [Filas de prioridade](./1-materiais/6-filas-prioridade.pdf)
 
 ### 2. Exercícios
 
