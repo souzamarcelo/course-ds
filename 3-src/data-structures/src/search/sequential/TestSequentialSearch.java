@@ -65,7 +65,7 @@ public class TestSequentialSearch {
         pointArrayList.add(pointArrayList.size(), new Point(0, 0));
         pointArrayList.add(pointArrayList.size(), new Point(4, 1));
 
-        System.out.println("Arraylist genérico de pontos: " + pointArrayList);
+        System.out.println("Generic Arraylist of points: " + pointArrayList);
         System.out.println("Position of point (0, 0): " + genericSearch.indexOf(pointArrayList, new Point(0, 0)));
         System.out.println("Position of point (4, 1): " + genericSearch.indexOf(pointArrayList, new Point(4, 1)));
         System.out.println("Position of point (4, 3): " + genericSearch.indexOf(pointArrayList, new Point(4, 3)));
