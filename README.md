@@ -15,6 +15,7 @@ Este é o repositório da disciplina de *Algoritmos e Estruturas de Dados* do cu
 + [Listas dinâmicas](./1-materiais/5-listas-dinamicas.pdf)
 + [Filas de prioridade](./1-materiais/6-filas-prioridade.pdf)
 + [Buscas em estruturas lineares](./1-materiais/7-busca.pdf)
++ [Ordenação de estruturas lineares](./1-materiais/8-ordenacao.pdf)
 
 ### 2. Exercícios
 
