@@ -20,9 +20,9 @@ public class TestSequentialSearch {
             System.out.print(i + " ");
         System.out.println("]");
 
-		System.out.println("Position of element 19: " + simpleSearch.search(intArray, 19));
-		System.out.println("Position of element 4: " + simpleSearch.search(intArray, 4));
-		System.out.println("Position of element 25: " + simpleSearch.search(intArray, 25));
+		System.out.println("Position of element 19: " + simpleSearch.indexOf(intArray, 19));
+		System.out.println("Position of element 4: " + simpleSearch.indexOf(intArray, 4));
+		System.out.println("Position of element 25: " + simpleSearch.indexOf(intArray, 25));
 		
 		List<String> stringList = new LinkedList<>();
         stringList.add(stringList.size(), "Brasil");
@@ -32,9 +32,9 @@ public class TestSequentialSearch {
         stringList.add(stringList.size(), "Canadá");
         
         System.out.println("LinkedList of strings: " + stringList);
-		System.out.println("Position of element Japão: " + simpleSearch.search(stringList, "Japão"));
-		System.out.println("Position of element Argentina: " + simpleSearch.search(stringList, "Argentina"));
-		System.out.println("Position of element Portugal: " + simpleSearch.search(stringList, "Portugal"));
+		System.out.println("Position of element Japão: " + simpleSearch.indexOf(stringList, "Japão"));
+		System.out.println("Position of element Argentina: " + simpleSearch.indexOf(stringList, "Argentina"));
+		System.out.println("Position of element Portugal: " + simpleSearch.indexOf(stringList, "Portugal"));
 		System.out.println();
 		
 		Point[] pointArray = {

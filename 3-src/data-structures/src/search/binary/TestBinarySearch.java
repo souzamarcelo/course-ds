@@ -19,9 +19,9 @@ public class TestBinarySearch {
             System.out.print(i + " ");
         System.out.println("]");
         
-		System.out.println("Position of element 19: " + simpleSearch.search(intArray, 19));
-		System.out.println("Position of element 4: " + simpleSearch.search(intArray, 4));
-		System.out.println("Position of element 25: " + simpleSearch.search(intArray, 25));
+		System.out.println("Position of element 19: " + simpleSearch.indexOf(intArray, 19));
+		System.out.println("Position of element 4: " + simpleSearch.indexOf(intArray, 4));
+		System.out.println("Position of element 25: " + simpleSearch.indexOf(intArray, 25));
 		
 		List<String> stringArray = new ArrayList<>();
         stringArray.add(stringArray.size(), "Argentina");
@@ -30,9 +30,9 @@ public class TestBinarySearch {
         stringArray.add(stringArray.size(), "França");
         stringArray.add(stringArray.size(), "Japão");
         System.out.println("Arraylist of strings: " + stringArray);
-		System.out.println("Position of element Japão: " + simpleSearch.search(stringArray, "Japão"));
-		System.out.println("Position of element Argentina: " + simpleSearch.search(stringArray, "Argentina"));
-		System.out.println("Position of element Portugal: " + simpleSearch.search(stringArray, "Portugal"));
+		System.out.println("Position of element Japão: " + simpleSearch.indexOf(stringArray, "Japão"));
+		System.out.println("Position of element Argentina: " + simpleSearch.indexOf(stringArray, "Argentina"));
+		System.out.println("Position of element Portugal: " + simpleSearch.indexOf(stringArray, "Portugal"));
 		System.out.println();
 		
 		Point[] pointArray = {

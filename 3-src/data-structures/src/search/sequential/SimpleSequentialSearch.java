@@ -4,7 +4,7 @@ import list.List;
 
 public class SimpleSequentialSearch {
 	
-	public int search(int[] array, int value) {
+	public int indexOf(int[] array, int value) {
 		for(int i = 0; i < array.length; i++)
 			if(array[i] == value)
 				return i;
@@ -12,7 +12,7 @@ public class SimpleSequentialSearch {
 		return -1;
 	}
 	
-	public int search_sorted(int[] array, int value) {
+	public int indexOf_sorted(int[] array, int value) {
 		for(int i = 0; i < array.length; i++) {
 			if(array[i] == value)
 				return i;
@@ -22,7 +22,7 @@ public class SimpleSequentialSearch {
 		return -1;
 	}
 
-	public int search(String[] array, String value) {
+	public int indexOf(String[] array, String value) {
 		for(int i = 0; i < array.length; i++)
 			if(array[i].equals(value))
 				return i;
@@ -30,7 +30,7 @@ public class SimpleSequentialSearch {
 		return -1;
 	}
 
-	public int search(List<Integer> list, int value) {
+	public int indexOf(List<Integer> list, int value) {
 		for(int i = 0; i < list.size(); i++)
 			if(list.get(i) == value)
 				return i;
@@ -38,7 +38,7 @@ public class SimpleSequentialSearch {
 		return -1;
 	}
 
-	public int search(List<String> list, String value) {
+	public int indexOf(List<String> list, String value) {
 		for(int i = 0; i < list.size(); i++)
 			if(list.get(i).equals(value))
 				return i;

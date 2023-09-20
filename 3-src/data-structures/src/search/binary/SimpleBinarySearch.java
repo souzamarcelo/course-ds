@@ -4,7 +4,7 @@ import list.List;
 
 public class SimpleBinarySearch {
 	
-	public int search(int[] array, int value) {
+	public int indexOf(int[] array, int value) {
 		int start = 0;
 		int end = array.length - 1;
 		int mid;
@@ -24,7 +24,7 @@ public class SimpleBinarySearch {
 			return -1;
 	}
 	
-	public int search(String[] array, String value) {
+	public int indexOf(String[] array, String value) {
 		int start = 0;
 		int end = array.length - 1;
 		int mid;
@@ -44,7 +44,7 @@ public class SimpleBinarySearch {
 			return -1;
 	}
 
-	public int search(List<Integer> list, int value) {
+	public int indexOf(List<Integer> list, int value) {
 		int start = 0;
 		int end = list.size() - 1;
 		int mid;
@@ -64,7 +64,7 @@ public class SimpleBinarySearch {
 			return -1;
 	}
 
-	public int search(List<String> list, String value) {
+	public int indexOf(List<String> list, String value) {
 		int start = 0;
 		int end = list.size() - 1;
 		int mid;
