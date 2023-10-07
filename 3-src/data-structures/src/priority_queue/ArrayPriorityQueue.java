@@ -7,20 +7,6 @@ import list.List;
 
 public class ArrayPriorityQueue<K,V> implements PriorityQueue<K, V> {
 	
-	private static class PQEntry<K,V> implements Entry<K,V> {
-		private K k;
-		private V v;
-		
-		public PQEntry(K key, V value) {
-			k = key;
-			v = value;
-		}
-		
-		public K getKey() { return k; }
-		public V getValue() { return v; }
-		public String toString() { return "[" + k + "; " + v + "]"; }
-	}
-	
 	private List<Entry<K,V>> list = new ArrayList<>();
 	private Comparator<K> comp;
 	
@@ -50,7 +36,7 @@ public class ArrayPriorityQueue<K,V> implements PriorityQueue<K, V> {
 	
 	public Entry<K, V> insert(K key, V value) {
 		checkKey(key);
-		Entry<K,V> newest = new PQEntry<>(key, value);
+		Entry<K,V> newest = new Entry<>(key, value);
 		if(isEmpty()) list.add(0, newest);
 		else {
 			int j = 0;

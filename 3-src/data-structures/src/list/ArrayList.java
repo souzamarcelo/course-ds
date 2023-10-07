@@ -73,4 +73,11 @@ public class ArrayList<E> implements List<E> {
 		sb.append(")");
 		return sb.toString();
 	}
+
+	public int indexOf(E e) {
+		for(int i = 0; i < data.length; i++)
+			if(data[i].equals(e))
+				return i;
+		return -1;
+	}
 }

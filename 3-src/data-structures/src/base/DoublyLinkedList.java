@@ -136,4 +136,17 @@ public class DoublyLinkedList<E> {
 		if (i < 0 || i >= n)
 			throw new IndexOutOfBoundsException("Illegal index: " + i);
 	}
+
+	public int indexOf(E e) {
+		if(isEmpty()) return -1;
+		int count = -1;
+		Node<E> walk = header.getNext();
+		while(walk != trailer) {
+			count++;
+			if(walk.getElement().equals(e))
+				return count;
+			walk = walk.getNext();
+		}
+		return -1;
+	}
 }

@@ -11,4 +11,5 @@ public class LinkedList<E> implements List<E> {
 	public E set(int i, E e) { return list.set(i, e); }
 	public void add(int i, E e) { list.add(i, e); }
 	public E remove(int i) { return list.remove(i); }
+	public int indexOf(E e) { return list.indexOf(e); }
 }
