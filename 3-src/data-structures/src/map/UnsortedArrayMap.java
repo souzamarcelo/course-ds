@@ -4,7 +4,7 @@ import list.ArrayList;
 
 public class UnsortedArrayMap<K,V> implements Map<K,V> {
 
-	protected static class Entry<K,V> {
+	private static class Entry<K,V> {
 		private K k;
 		private V v;
 
@@ -16,8 +16,7 @@ public class UnsortedArrayMap<K,V> implements Map<K,V> {
 		public K getKey() { return k; }
 		public V getValue() { return v; }
 
-		protected void setKey(K key) { k = key; }
-		protected V setValue(V value) {
+		public V setValue(V value) {
 			V old = v;
 			v = value;
 			return old;
@@ -56,9 +55,9 @@ public class UnsortedArrayMap<K,V> implements Map<K,V> {
 
 	public V remove(K key) {
 		int j = findIndex(key);
-		int n = size();
 		if (j == -1) return null;
 		V answer = data.get(j).getValue();
+		int n = size();
 		if (j != n - 1)
 			data.set(j, data.get(n-1));
 		data.remove(n-1);

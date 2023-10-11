@@ -21,10 +21,6 @@ public class ArrayPriorityQueue<K,V> implements PriorityQueue<K, V> {
 
 	public int size() { return list.size(); }
 	public boolean isEmpty() { return size() == 0; }
-
-	private int compare(Entry<K,V> a, Entry<K,V> b) {
-		return comp.compare(a.getKey(), b.getKey());
-	}
 	
 	private boolean checkKey(K key) {
 		try {
@@ -40,7 +36,7 @@ public class ArrayPriorityQueue<K,V> implements PriorityQueue<K, V> {
 		if(isEmpty()) list.add(0, newest);
 		else {
 			int j = 0;
-			while(j < size() && compare(newest, list.get(j)) < 0)
+			while(j < size() && comp.compare(newest.getKey(), list.get(j).getKey()) < 0)
 				j++;
 			list.add(j, newest);
 		}

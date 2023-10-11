@@ -5,7 +5,7 @@ import list.ArrayList;
 
 public class SortedArrayMap<K,V> implements Map<K,V> {
 
-	protected static class Entry<K,V> {
+	private static class Entry<K,V> {
 		private K k;
 		private V v;
 
@@ -17,7 +17,7 @@ public class SortedArrayMap<K,V> implements Map<K,V> {
 		public K getKey() { return k; }
 		public V getValue() { return v; }
 
-		protected V setValue(V value) {
+		public V setValue(V value) {
 			V old = v;
 			v = value;
 			return old;
@@ -30,18 +30,18 @@ public class SortedArrayMap<K,V> implements Map<K,V> {
 	private Comparator<K> comp;
 	private ArrayList<Entry<K,V>> data = new ArrayList<>();
 
-	protected SortedArrayMap(Comparator<K> c) {
+	public SortedArrayMap(Comparator<K> c) {
 		comp = c;
 	}
 
-	protected SortedArrayMap() {
+	public SortedArrayMap() {
 		this(new DefaultComparator<K>());
 	}
 	
 	public int size() { return data.size(); }
 	public boolean isEmpty() { return size() == 0; }
 	
-	protected boolean checkKey(K key) {
+	private boolean checkKey(K key) {
 		try {
 			return (comp.compare(key,key) == 0);
 		} catch (ClassCastException e) {
@@ -49,7 +49,7 @@ public class SortedArrayMap<K,V> implements Map<K,V> {
 		}
 	}
 	
-	private int findIndex(K key) {return findIndex(key, 0, data.size() - 1); }
+	private int findIndex(K key) { return findIndex(key, 0, data.size() - 1); }
 	
 	private int findIndex(K key, int low, int high) {
 		if (high < low) return high + 1;
