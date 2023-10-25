@@ -17,6 +17,7 @@ Este é o repositório da disciplina de *Algoritmos e Estruturas de Dados* do cu
 + [Buscas em estruturas lineares](./1-materiais/7-busca.pdf)
 + [Ordenação de estruturas lineares](./1-materiais/8-ordenacao.pdf)
 + [Mapas](./1-materiais/9-mapas.pdf)
++ [Árvores](./1-materiais/10-arvores.pdf)
 
 ### 2. Exercícios
 
