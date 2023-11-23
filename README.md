@@ -32,7 +32,8 @@ Este é o repositório da disciplina de *Algoritmos e Estruturas de Dados* do cu
 
 ### 4. Laboratórios
 
-+ [Pilhas](./4-labs/lab1-pilhas.pdf)
++ [Pilhas](./4-labs/lab-pilhas.pdf)
++ [Grafos](./4-labs/lab-grafos.pdf)
 
 ***
 
