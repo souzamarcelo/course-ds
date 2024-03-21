@@ -1,11 +1,14 @@
-package sorting;
+package comparator.sorting;
 
 import utils.Point;
+import java.util.Comparator;
 
 public class TestInsertionSort {
 	
-    static InsertionSort sort = new InsertionSort();
-    
+    static InsertionSort<Point> sortPoints = new InsertionSort<>(new PointComparator());
+    static InsertionSort<Integer> sortInts = new InsertionSort<>();
+    static InsertionSort<String> sortStrings = new InsertionSort<>();
+
 	public static void main(String[] args) {
         Integer[] intArray = {4, 19, 1, 12, 4, 5, 9, 8, 33};
         
@@ -15,7 +18,7 @@ public class TestInsertionSort {
         System.out.println("]");
 
 		System.out.println("Sorting...");
-        sort.insertionSort(intArray);
+        sortInts.insertionSort(intArray);
 
         System.out.print("Sorted array of integers: [ ");
         for(int i : intArray)
@@ -39,12 +42,19 @@ public class TestInsertionSort {
         System.out.println("]");
 
         System.out.println("Sorting...");
-        sort.insertionSort(pointArray);
+        sortPoints.insertionSort(pointArray);
 
         System.out.print("Sorted generic array of points: [ ");
         for(Point p : pointArray)
             System.out.print(p + " ");
         System.out.println("]");
         System.out.println();
+	}
+
+	private static class PointComparator implements Comparator<Point> {
+		public int compare(Point a, Point b) {
+			if(a.getX() == b.getX()) return ((int) a.getY() - (int) b.getY());
+            return ((int) a.getX() - (int) b.getX());
+		}
 	}
 }

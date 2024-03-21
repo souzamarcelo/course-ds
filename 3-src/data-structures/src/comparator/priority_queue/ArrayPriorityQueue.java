@@ -1,17 +1,30 @@
-package priority_queue;
+package comparator.priority_queue;
+
+import java.util.Comparator;
 
 import list.ArrayList;
 import list.List;
 
-public class ArrayPriorityQueue<K extends Comparable<? super K>,V> implements PriorityQueue<K, V> {
+public class ArrayPriorityQueue<K,V> implements PriorityQueue<K, V> {
 	
 	private List<Entry<K,V>> list = new ArrayList<>();
+	private Comparator<K> comp;
+	
+	
+	public ArrayPriorityQueue() {
+		this(new DefaultComparator<K>());
+	}
+	
+	public ArrayPriorityQueue(Comparator<K> c) {
+		comp = c;
+	}
+
 	public int size() { return list.size(); }
 	public boolean isEmpty() { return size() == 0; }
 	
 	private boolean checkKey(K key) {
 		try {
-			return (key.compareTo(key)) == 0;
+			return (comp.compare(key, key)) == 0;
 		} catch(ClassCastException e) {
 			throw new IllegalArgumentException("Incompatible key");
 		}
@@ -23,7 +36,7 @@ public class ArrayPriorityQueue<K extends Comparable<? super K>,V> implements Pr
 		if(isEmpty()) list.add(0, newest);
 		else {
 			int j = 0;
-			while(j < size() && newest.getKey().compareTo(list.get(j).getKey()) < 0)
+			while(j < size() && comp.compare(newest.getKey(), list.get(j).getKey()) < 0)
 				j++;
 			list.add(j, newest);
 		}

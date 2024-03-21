@@ -1,8 +1,9 @@
-package map;
+package comparator.map;
 
+import java.util.Comparator;
 import list.ArrayList;
 
-public class SortedArrayMap<K extends Comparable<? super K>,V> implements Map<K,V> {
+public class SortedArrayMap<K,V> implements Map<K,V> {
 
 	private static class Entry<K,V> {
 		private K k;
@@ -25,14 +26,24 @@ public class SortedArrayMap<K extends Comparable<? super K>,V> implements Map<K,
 		public String toString() { return "<" + k + ", " + v + ">"; }
 	}
 	
+	
+	private Comparator<K> comp;
 	private ArrayList<Entry<K,V>> data = new ArrayList<>();
+
+	public SortedArrayMap(Comparator<K> c) {
+		comp = c;
+	}
+
+	public SortedArrayMap() {
+		this(new DefaultComparator<K>());
+	}
 	
 	public int size() { return data.size(); }
 	public boolean isEmpty() { return size() == 0; }
 	
 	private boolean checkKey(K key) {
 		try {
-			return (key.compareTo(key) == 0);
+			return (comp.compare(key,key) == 0);
 		} catch (ClassCastException e) {
 			throw new IllegalArgumentException("Incompatible key");
 		}
@@ -43,7 +54,7 @@ public class SortedArrayMap<K extends Comparable<? super K>,V> implements Map<K,
 	private int findIndex(K key, int low, int high) {
 		if (high < low) return high + 1;
 		int mid = (low + high) / 2;
-		int result = key.compareTo(data.get(mid).getKey());
+		int result = comp.compare(key, data.get(mid).getKey());
 		if (result == 0)
 			return mid;
 		else if (result < 0)
@@ -55,14 +66,14 @@ public class SortedArrayMap<K extends Comparable<? super K>,V> implements Map<K,
 	public V get(K key) {
 		checkKey(key);
 		int j = findIndex(key);
-		if (j == size() || key.compareTo(data.get(j).getKey()) != 0) return null;
+		if (j == size() || comp.compare(key, data.get(j).getKey()) != 0) return null;
 		return data.get(j).getValue();
 	}
 
 	public V put(K key, V value) {
 		checkKey(key);
 		int j = findIndex(key);
-		if (j < size() && key.compareTo(data.get(j).getKey()) == 0)
+		if (j < size() && comp.compare(key, data.get(j).getKey()) == 0)
 			return data.get(j).setValue(value);
 		data.add(j, new Entry<K,V>(key,value));
 		return null;
@@ -71,7 +82,7 @@ public class SortedArrayMap<K extends Comparable<? super K>,V> implements Map<K,
 	public V remove(K key) {
 		checkKey(key);
 		int j = findIndex(key);
-		if (j == size() || key.compareTo(data.get(j).getKey()) != 0) return null;
+		if (j == size() || comp.compare(key, data.get(j).getKey()) != 0) return null;
 		return data.remove(j).getValue();
 	}
 

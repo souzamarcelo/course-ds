@@ -1,5 +1,6 @@
-package priority_queue;
+package comparator.priority_queue;
 
+import java.util.Comparator;
 import utils.Point;
 
 public class TestPriorityQueue {
@@ -29,8 +30,8 @@ public class TestPriorityQueue {
 		System.out.println("\n\n");
 		
 		
-		System.out.println("Teste usando uma chave criada (MyKey)...");
-		PriorityQueue<MyKey, Point> otherPriorityQueue = new ArrayPriorityQueue<>();
+		System.out.println("Teste usando uma chave criada (MyKey) e um comparador (MyKeyComparator)...");
+		PriorityQueue<MyKey, Point> otherPriorityQueue = new ArrayPriorityQueue<>(new MyKeyComparator());
 
 		System.out.println("Inserindo quatro entradas...");
 		otherPriorityQueue.insert(new MyKey('A', 12), new Point(1, 0));
@@ -51,6 +52,22 @@ public class TestPriorityQueue {
 		System.out.println("Fila de prioridades: " + otherPriorityQueue.toString());
 
 		System.out.println();
+	}
+	
+	private static class MyKeyComparator implements Comparator<MyKey> {
+		public int compare(MyKey a, MyKey b) {
+			if(a.category == b.category) {
+				if(a.value == b.value)
+					return 0;
+				else if(a.value < b.value)
+					return -1;
+				else
+					return 1;
+			} else if(a.category == 'A')
+				return -1;
+			else
+				return 1;
+		}
 	}
 
 	private static class MyKey implements Comparable<MyKey> {

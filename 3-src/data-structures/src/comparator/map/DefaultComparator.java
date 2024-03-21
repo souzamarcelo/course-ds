@@ -1,4 +1,4 @@
-package map;
+package comparator.map;
 
 import java.util.Comparator;
 

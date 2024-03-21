@@ -1,4 +1,4 @@
-package sorting;
+package comparator.sorting;
 
 import java.util.Comparator;
 
