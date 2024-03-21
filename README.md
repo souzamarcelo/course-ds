@@ -11,11 +11,11 @@ Este é o repositório da disciplina de *Algoritmos e Estruturas de Dados* do cu
 + [Introdução](./1-materiais/1-introducao.pdf)
 + [Complexidade de algoritmos](./1-materiais/2-complexidade-algoritmos.pdf)
 + [Estruturas de dados fundamentais](./1-materiais/3-estruturas-dados-fundamentais.pdf)
-+ [Pilhas, filas e deques](./1-materiais/4-pilhas-filas-deques.pdf)
-+ [Listas dinâmicas](./1-materiais/5-listas-dinamicas.pdf)
-+ [Filas de prioridade](./1-materiais/6-filas-prioridade.pdf)
-+ [Buscas em estruturas lineares](./1-materiais/7-busca.pdf)
-+ [Ordenação de estruturas lineares](./1-materiais/8-ordenacao.pdf)
++ [Buscas em estruturas lineares](./1-materiais/4-busca.pdf)
++ [Ordenação de estruturas lineares](./1-materiais/5-ordenacao.pdf)
++ [Pilhas, filas e deques](./1-materiais/6-pilhas-filas-deques.pdf)
++ [Listas dinâmicas](./1-materiais/7-listas-dinamicas.pdf)
++ [Filas de prioridade](./1-materiais/8-filas-prioridade.pdf)
 + [Mapas](./1-materiais/9-mapas.pdf)
 + [Árvores](./1-materiais/10-arvores.pdf)
 + [Grafos](./1-materiais/11-grafos.pdf)
@@ -33,6 +33,9 @@ Este é o repositório da disciplina de *Algoritmos e Estruturas de Dados* do cu
 ### 4. Laboratórios
 
 + [Pilhas](./4-labs/lab-pilhas.pdf)
++ [Filas](./4-labs/lab-filas.pdf)
++ [Listas](./4-labs/lab-listas.pdf)
++ [Filas de prioridade](./4-labs/lab-filas-prioridade.pdf)
 + [Grafos](./4-labs/lab-grafos.pdf)
 
 ***
