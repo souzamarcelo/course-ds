@@ -43,7 +43,7 @@ Este é o repositório da disciplina de *Algoritmos e Estruturas de Dados* do cu
 
 ## Citação
 
-Aqui estão instruções de citação, caso você utilize esse material de alguma forma.
+Aqui estão instruções de citação, caso você use esse material de alguma forma.
 
 Marcelo de Souza (2023), Algoritmos e Estruturas de Dados. Online: https://github.com/souzamarcelo/course-ds. Creative Commons BY-NC-ND 4.0.
 
