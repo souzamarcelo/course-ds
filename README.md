@@ -17,8 +17,9 @@ Este é o repositório da disciplina de *Algoritmos e Estruturas de Dados* do cu
 + [Listas dinâmicas](./1-materiais/7-listas-dinamicas.pdf)
 + [Filas de prioridade](./1-materiais/8-filas-prioridade.pdf)
 + [Mapas](./1-materiais/9-mapas.pdf)
-+ [Árvores](./1-materiais/10-arvores.pdf)
-+ [Grafos](./1-materiais/11-grafos.pdf)
++ [Tabelas hash](./1-materiais/10-tabelas-hash.pdf)
++ [Árvores](./1-materiais/11-arvores.pdf)
++ [Grafos](./1-materiais/12-grafos.pdf)
 
 ### 2. Exercícios
 
