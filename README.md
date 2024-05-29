@@ -19,7 +19,10 @@ Este é o repositório da disciplina de *Algoritmos e Estruturas de Dados* do cu
 + [Mapas](./1-materiais/9-mapas.pdf)
 + [Tabelas hash](./1-materiais/10-tabelas-hash.pdf)
 + [Árvores](./1-materiais/11-arvores.pdf)
-+ [Grafos](./1-materiais/12-grafos.pdf)
++ Grafos
+    + [Introdução](./1-materiais/12a-grafos-introducao.pdf)
+    + [Buscas e conexidade](./1-materiais/12b-grafos-buscas-conexidade.pdf)
+    + [Caminhos mínimos](./1-materiais/12c-grafos-caminhos-minimos.pdf)
 
 ### 2. Exercícios
 
