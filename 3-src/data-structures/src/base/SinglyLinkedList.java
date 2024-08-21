@@ -72,4 +72,13 @@ public class SinglyLinkedList<E> {
 	    sb.append(")");
 	    return sb.toString();
 	}
+	
+	// Exercise 3.3
+	private Node<E> penultimate(){
+		if(size < 2) throw new IllegalStateException("List must have 2 or more entries");
+		Node<E> walk = head;
+		while(walk.getNext().getNext() != null)
+			walk = walk.getNext();
+		return walk;
+	}
 }

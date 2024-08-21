@@ -149,4 +149,27 @@ public class DoublyLinkedList<E> {
 		}
 		return -1;
 	}
+	
+	// Exercise 3.6
+	private Node<E> middle(){
+		if(size == 0) throw new IllegalStateException("List must be nonempty");
+		Node<E> middle = header.getNext();
+		Node<E> partner = trailer.getPrev();
+		while(middle != partner && middle.getNext() != partner){
+			middle = middle.getNext();
+			partner = partner.getPrev();
+		}
+		return middle;
+	}
+	
+	// Exercise 3.8
+	public int size2(){
+		int count = 0;
+		Node<E> walk = header.getNext();
+		while(walk != trailer){
+			count++;
+			walk = walk.getNext();
+		}
+		return count;
+	}
 }

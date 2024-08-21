@@ -75,4 +75,17 @@ public class CircularlyLinkedList<E> {
 		sb.append(")");
 		return sb.toString();
 	}
+	
+	// Exercise 3.7
+	public int size2(){
+		if(tail == null)
+			return 0;
+		Node<E> walk = tail.getNext();
+		int count = 1;
+		while(walk != tail){
+			count++;
+			walk = walk.getNext();
+		}
+		return count;
+	}
 }

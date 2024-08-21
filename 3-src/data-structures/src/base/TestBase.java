@@ -4,9 +4,9 @@ import utils.Point;
 
 public class TestBase {
 	
-	static DoublyLinkedList<Point> list = new DoublyLinkedList<>(); 
+	//static DoublyLinkedList<Point> list = new DoublyLinkedList<>(); 
 	//static CircularlyLinkedList<Point> list = new CircularlyLinkedList<>(); 
-	//static SinglyLinkedList<Point> list = new SinglyLinkedList<>(); 
+	static SinglyLinkedList<Point> list = new SinglyLinkedList<>(); 
     
 	public static void main(String[] args) {
 		System.out.println("Adicionando elementos...");
