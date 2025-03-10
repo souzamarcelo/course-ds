@@ -47,7 +47,7 @@ Marcelo de Souza (2023), Algoritmos e Estruturas de Dados. Online: https://githu
 
 ```bibtex
 @Misc{Souza2023lnds,
-    title =        {Algoritmos e Estruturas de Dados},
+    title =        {Estruturas de Dados},
     author =       {Marcelo de Souza}, 
     howPublished = {\url{https://github.com/souzamarcelo/course-ds}}, 
     year =         {2023},
