@@ -1,9 +1,9 @@
 package priority_queue;
 
-public interface PriorityQueue<K, V> {
+public interface PriorityQueue<E> {
 	int size();
 	boolean isEmpty();
-	Entry<K,V> insert(K key, V value);
-	Entry<K,V> min();
-	Entry<K,V> removeMin();
+	void insert(E e);
+	E min();
+	E removeMin();
 }

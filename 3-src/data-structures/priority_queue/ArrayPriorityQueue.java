@@ -3,39 +3,28 @@ package priority_queue;
 import list.ArrayList;
 import list.List;
 
-public class ArrayPriorityQueue<K extends Comparable<? super K>,V> implements PriorityQueue<K, V> {
+public class ArrayPriorityQueue<E extends Comparable<? super E>> implements PriorityQueue<E> {
 	
-	private List<Entry<K,V>> list = new ArrayList<>();
+	private List<E> list = new ArrayList<>();
 	public int size() { return list.size(); }
 	public boolean isEmpty() { return size() == 0; }
 	
-	private boolean checkKey(K key) {
-		try {
-			return (key.compareTo(key)) == 0;
-		} catch(ClassCastException e) {
-			throw new IllegalArgumentException("Incompatible key");
-		}
-	}
-	
-	public Entry<K, V> insert(K key, V value) {
-		checkKey(key);
-		Entry<K,V> newest = new Entry<>(key, value);
-		if(isEmpty()) list.add(0, newest);
+	public void insert(E e) {
+		if(isEmpty()) list.add(0, e);
 		else {
 			int j = 0;
-			while(j < size() && newest.getKey().compareTo(list.get(j).getKey()) < 0)
+			while(j < size() && e.compareTo(list.get(j)) < 0)
 				j++;
-			list.add(j, newest);
+			list.add(j, e);
 		}
-		return newest;
 	}
 
-	public Entry<K,V> min() {
+	public E min() {
 		if (isEmpty()) return null;
 		return list.get(size() - 1);
 	}
 
-	public Entry<K,V> removeMin() {
+	public E removeMin() {
 		if (isEmpty()) return null;
 		return list.remove(size() - 1);
 	}
