@@ -43,14 +43,14 @@ Este é o repositório da disciplina de *Resolução de Problemas com Estruturas
 
 Aqui estão instruções de citação, caso você use esse material de alguma forma.
 
-Marcelo de Souza (2023), Algoritmos e Estruturas de Dados. Online: https://github.com/souzamarcelo/course-ds. Creative Commons BY-NC-ND 4.0.
+Marcelo de Souza (2025), Estruturas de Dados. Online: https://github.com/souzamarcelo/course-ds. Creative Commons BY-NC-ND 4.0.
 
 ```bibtex
-@Misc{Souza2023lnds,
+@Misc{Souza2025ds,
     title =        {Estruturas de Dados},
     author =       {Marcelo de Souza}, 
     howPublished = {\url{https://github.com/souzamarcelo/course-ds}}, 
-    year =         {2023},
+    year =         {2025},
     note =         {Creative Commons BY-NC-ND 4.0}
 }
 ```
