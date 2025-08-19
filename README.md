@@ -32,7 +32,6 @@ Este é o repositório da disciplina de *Resolução de Problemas com Estruturas
 ### 3. Código-fonte
 
 + [Programacão em Python](./3-src/intro-python)
-+ [Estruturas de dados](./3-src/data-structures)
 + [NRooks](./3-src/nrooks)
 
 ### 4. Laboratórios
