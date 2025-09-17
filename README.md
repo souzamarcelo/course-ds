@@ -34,6 +34,7 @@ Este é o repositório da disciplina de *Resolução de Problemas com Estruturas
 + [NRooks](./3-src/nrooks)
 + [Listas encadeadas](https://colab.research.google.com/github/souzamarcelo/course-ds/blob/main/3-src/notebooks/linked-lists.ipynb)
 + [Pilhas](https://colab.research.google.com/github/souzamarcelo/course-ds/blob/main/3-src/notebooks/stacks.ipynb)
++ [Filas](https://colab.research.google.com/github/souzamarcelo/course-ds/blob/main/3-src/notebooks/queues.ipynb)
 
 ### 4. Laboratórios
 
