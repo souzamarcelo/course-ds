@@ -35,6 +35,7 @@ Este é o repositório da disciplina de *Resolução de Problemas com Estruturas
 + [Listas encadeadas](https://colab.research.google.com/github/souzamarcelo/course-ds/blob/main/3-src/notebooks/linked-lists.ipynb)
 + [Pilhas](https://colab.research.google.com/github/souzamarcelo/course-ds/blob/main/3-src/notebooks/stacks.ipynb)
 + [Filas](https://colab.research.google.com/github/souzamarcelo/course-ds/blob/main/3-src/notebooks/queues.ipynb)
++ [Filas de prioridade](https://colab.research.google.com/github/souzamarcelo/course-ds/blob/main/3-src/notebooks/priority-queues.ipynb)
 
 ### 4. Laboratórios
 
