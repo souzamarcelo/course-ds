@@ -16,8 +16,7 @@ Este é o repositório da disciplina de *Resolução de Problemas com Estruturas
 + [Ordenação de estruturas lineares](./1-materiais/5-ordenacao.pdf)
 + [Pilhas, filas e deques](./1-materiais/6-pilhas-filas-deques.pdf)
 + [Filas de prioridade](./1-materiais/8-filas-prioridade.pdf)
-+ [Mapas](./1-materiais/9-mapas.pdf)
-+ [Tabelas hash](./1-materiais/10-tabelas-hash.pdf)
++ [Dicionários e tabelas hash](./1-materiais/9-dicionarios-tabelas-hash.pdf)
 + [Árvores](./1-materiais/11-arvores.pdf)
 + Grafos
     + [Introdução](./1-materiais/12a-grafos-introducao.pdf)
